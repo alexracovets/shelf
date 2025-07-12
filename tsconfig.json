@@ -38,6 +38,12 @@
       "@templates": [
         "./src/ui/components/templates"
       ],
+      "@utils": [
+        "./src/utils"
+      ],
+      "@store": [
+        "./src/store"
+      ]
     }
   },
   "include": [
