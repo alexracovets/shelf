@@ -1,0 +1,1 @@
+export { DefaoultTeamplate } from "./DefaoultTeamplate";
