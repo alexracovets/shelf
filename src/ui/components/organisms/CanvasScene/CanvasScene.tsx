@@ -2,7 +2,7 @@
 
 import { Canvas } from "@react-three/fiber";
 
-import { Shelf } from "@molecules"; 
+import { Shelf } from "@molecules";
 
 export const CanvasScene = () => {
     return (
@@ -11,7 +11,7 @@ export const CanvasScene = () => {
                 fov: 75,
                 near: 0.1,
                 far: 1000,
-                position: [0, 0, 0.01]
+                position: [0, 0, 5]
             }}
         >
             <ambientLight intensity={1} />

@@ -1,7 +1,8 @@
 "use client";
 
-import { Box, DragControls, Html, useTexture } from "@react-three/drei";
-import { TiArrowUnsorted } from "react-icons/ti";
+import { Box, useTexture } from "@react-three/drei";
+
+import { ShelfsBlock } from "@atoms";
 
 import { useShelfInfo } from "@store";
 import { useRef } from "react";
@@ -19,18 +20,7 @@ export const Shelf = () => {
     return (
         <group ref={shelfRef} position={[-width / 2, 0, -5]}>
             {/* Ліва балка */}
-            <DragControls>
-                <Html
-                    position={[-widthShelf / 2, 0, depth / 2]}
-                    className="rotate-90 translate-x-[-35%] translate-y-[-50%] cursor-grab"
-                    onDrag={() => console.log(2)}
-                >
-                    <TiArrowUnsorted className="text-[30px]" />
-                </Html>
-            </DragControls>
-            <Box args={[widthShelf, height, depth]} position={[0, 0, 0]}>
-                <meshStandardMaterial map={colorMap} />
-            </Box>
+            <ShelfsBlock widthBlock={widthShelf} heightBlock={height} depthBlock={depth} texture={colorMap} />
 
             {/* Права балка */}
             <Box args={[widthShelf, height, depth]} position={[width, 0, 0]}>

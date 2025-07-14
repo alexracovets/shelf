@@ -1,1 +1,1 @@
-export { useShelfInfo } from "./useSheltInfo";
+export { useShelfInfo } from "./useShelfInfo";

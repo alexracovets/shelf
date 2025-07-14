@@ -1,0 +1,1 @@
+export { ShelfsBlock } from "./ShelfsBlock";
